@@ -38,4 +38,4 @@ make
 make DESTDIR=/pkg_dir install
 
 # Make a Debian package
-fpm -f -s dir -t deb -n transmission -p /work -v ${TRANSMISSION_VERSION} /pkg_dir/opt=/
+fpm -f -d libcurl4 -s dir -t deb -n transmission -p /work -v ${TRANSMISSION_VERSION} /pkg_dir/opt=/
