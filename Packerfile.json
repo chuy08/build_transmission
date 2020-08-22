@@ -1,7 +1,7 @@
 {
   "variables": {
     "build_type": "prod",
-    "transmission_version": "{{user `TRANSMISSION_VERSION`}}",
+    "transmission_version": "3.00",
     "ubuntu_version": "focal"
   },
   "builders": [
@@ -40,7 +40,7 @@
         "type": "docker-tag",
         "repository": "chuy08/{{user `ubuntu_version`}}-build-transmission",
         "tags": [
-          "latest", "{{user `transmission_version`}}"
+          "latest"
         ]
       }
     ]
